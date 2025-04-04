@@ -1,0 +1,57 @@
+{
+    "root": {
+        "id": "root",
+        "message": "Salut mon pote",
+        "choices": [
+            { 
+                "id": "answer-1",
+                "successPercentage": 50,
+                "nextNodeId": "1",
+                "message": "Salut je suis trop content"
+            },
+            { 
+                "id": "answer-2",
+                "successPercentage": 50,
+                "nextNodeId": "2",
+                "message": "Salut je suis trop triste",
+                "error": "Arrête d'être triste"
+            }
+        ]
+    },
+    "1": {
+        "id": "1",
+        "message": "Trop bien, tu veux parler ?",
+        "choices": [
+            { 
+                "id": "answer-3",
+                "successPercentage": 50,
+                "nextNodeId": "3",
+                "message": "Salut je suis trop content"
+            },
+            { 
+                "id": "answer-4",
+                "successPercentage": 50,
+                "nextNodeId": "4",
+                "message": "Salut je suis trop triste"
+            }
+        ]
+    },
+    "2": {
+        "id": "2",
+        "message": "Ne soit pas triste :( Je suis là pour toi",
+        "choices": [
+            { 
+                "id": "answer-3",
+                "successPercentage": 50,
+                "nextNodeId": "3",
+                "message": "Salut je suis trop content"
+            },
+            { 
+                "id": "answer-4",
+                "successPercentage": 50,
+                "nextNodeId": "4",
+                "message": "Salut je suis trop triste"
+            }
+        ]
+    }
+}

@@ -1,7 +1,7 @@
-import './App.css'
-import { HashRouter, Route, Routes } from 'react-router'
-import { Games } from './pages/Games'
-import { ChatGame } from './components/ChatGame'
+import './App.css';
+import { HashRouter, Route, Routes } from 'react-router';
+import { Games } from './pages/Games';
+import { ChatGame } from './components/ChatGame';
 
 function App() {
   return (

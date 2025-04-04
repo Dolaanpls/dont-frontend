@@ -1,7 +1,9 @@
+import { Link } from "react-router";
+
 export const Games = () => {
     return (
         <div>
-            Des jeux
+            <Link to="brouteur">Brouteur</Link>
         </div>
     );
 }
