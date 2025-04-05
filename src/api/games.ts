@@ -3,21 +3,30 @@ import brouteur from './data/brouteur.json';
 export type Choice = {
     id: string;
     message: string;
-    nextNodeId: string;
+    nextNodeId?: string;
+    nextAnswerId?: string;
     successPercentage: number;
 };
 
 export type Message = {
     id: string;
     message: string;
-    choices: Choice[];
+    choiceIds: string[];
 }
 
-export type ChatFlowChart = {
-    root: Message;
-} & Record<string, Message>;
+export type FlowChart = {
+    choices: Record<string, Choice>;
+    messages: {
+        root: Message;
+    } & Record<string, Message>;
+};
 
-const flowCharts: Record<string, ChatFlowChart> = {
+export type Chat = {
+    chart: FlowChart;
+    username: string;
+};
+
+const flowCharts: Record<string, Chat> = {
     brouteur,
 };
 
