@@ -1,0 +1,35 @@
+.icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+
+    :hover {
+        transform: translateY(-2px);
+    }
+
+    >img {
+        width: 29px;
+        aspect-ratio: 1/1;
+        transition: 0.2s;
+    }
+
+    .dot {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: #FF1919;
+        color: white;
+        font-size: 8px;
+    }
+}
